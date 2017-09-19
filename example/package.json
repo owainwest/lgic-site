@@ -1,0 +1,30 @@
+{
+  "name": "rest-react-scheduler",
+  "version": "0.1.0",
+  "main": "src/electron-frontend.js",
+  "private": true,
+  "dependencies": {
+    "boolean-parser": "0.0.2",
+    "electron": "^1.7.5",
+    "electron-prompt": "^0.3.0",
+    "https-proxy-agent": "^2.0.0",
+    "jquery": "^3.2.1",
+    "node-fetch": "^1.7.1",
+    "parallelshell": "^3.0.1",
+    "progressbar.js": "^1.0.1",
+    "q": "^1.5.0",
+    "react": "^15.6.1",
+    "react-bootstrap": "^0.31.2",
+    "react-dom": "^15.6.1",
+    "react-scripts": "1.0.10",
+    "request-promise": "^4.2.1",
+    "smalltalk": "^2.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "electron-frontend": "parallelshell \"react-scripts start\" \"electron .\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
